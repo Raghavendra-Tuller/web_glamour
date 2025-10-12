@@ -1,0 +1,78 @@
+/* Reset */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #f8f0f5;
+}
+nav .logo { font-size: 24px; font-weight: bold; }
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav ul li a { text-decoration: none; color: #333; font-weight: 500; }
+
+/* Hero */
+.hero { text-align: center; padding: 100px 20px; background-color: #ffe4e1; }
+.hero h1 { font-size: 48px; margin-bottom: 10px; }
+.hero p { font-size: 20px; margin-bottom: 20px; }
+.btn { background-color: #ff69b4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+
+/* Services */
+.services { padding: 50px 20px; text-align: center; }
+.service-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.card { background-color: #fff0f5; padding: 20px; width: 250px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+/* Pricing */
+table { width: 80%; margin: 30px auto; border-collapse: collapse; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+th { background-color: #ffb6c1; color: white; }
+
+/* Contact */
+.contact { padding: 50px 20px; text-align: center; }
+form { display: flex; flex-direction: column; max-width: 400px; margin: auto; gap: 15px; }
+input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+button { background-color: #ff69b4; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; }
+
+/* Responsive */
+@media (max-width:768px) {
+    .service-cards { flex-direction: column; align-items: center; }
+    nav ul { flex-direction: column; gap: 10px; }
+}
+/* Logo Image */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Footer Section */
+footer {
+  background-color: #f8f0f5;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+}
+.footer-content h2 {
+  color: #ff69b4;
+  margin-bottom: 10px;
+}
+.footer-content p {
+  color: #444;
+  line-height: 1.6;
+}
+footer .copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
