@@ -1,2 +1,2 @@
 # web_glamour
-Assignment
+Assignment to build a glamour webpage
